@@ -5,7 +5,6 @@ import javax.servlet.http.HttpServletRequest;
 
 public class CookiesChecker {
 
-// Метод проверяет наличие атрибута lastTimezone в Cookie
     public static String getTimeZone(HttpServletRequest request) {
         String result = "";
 

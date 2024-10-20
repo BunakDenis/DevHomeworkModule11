@@ -72,7 +72,7 @@ public class TimezoneValidateFilter extends HttpFilter {
     }
 
     private static String getDateTime(String timeParameter) {
-        String result;
+        String result = "";
         if (timeParameter.isEmpty()) {
             result = DateTimeService.get();
         } else {

@@ -30,7 +30,7 @@ public class TimeServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String timeParameter = req.getParameter("timezone");
         String dateTime = DateTimeService.get(timeParameter);
 
